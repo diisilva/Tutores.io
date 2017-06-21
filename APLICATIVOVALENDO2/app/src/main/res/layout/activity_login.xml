@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_degrade"
+    android:gravity="center_horizontal|center_vertical">
+
+    tools:context="aplicativovalendo.studio.com.aplicativovalendo.Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/abc_input_method_navigation_guard" />
+
+        <EditText
+            android:id="@+id/text_turnoAlunoID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite seu usuário"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/text_senhaAlunoID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_turnoAlunoID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_senhaAlunoID"
+            android:layout_alignStart="@+id/text_senhaAlunoID"
+            android:layout_below="@+id/text_senhaAlunoID"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/fundo_botao"
+            android:text="@string/botao_login" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:onClick="abrirCadastroUsuario"
+            android:text="@string/crie_conta" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
