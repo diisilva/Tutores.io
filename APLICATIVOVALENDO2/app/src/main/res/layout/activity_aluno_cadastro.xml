@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_degrade"
+
+    tools:context="aplicativovalendo.studio.com.aplicativovalendo.Activity.AlunoCadastroActivity">
+
+    <EditText
+        android:id="@+id/text_turnoAlunoID"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:ems="10"
+        android:hint="Digite a disciplina"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@+id/text_turnoAlunoID"
+        android:layout_alignLeft="@+id/text_turnoAlunoID"
+        android:layout_alignStart="@+id/text_turnoAlunoID" />
+
+    <EditText
+        android:id="@+id/text_turnoAlunoID"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:ems="10"
+        android:hint="Digite o turno"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@+id/text_bairroAlunoID"
+        android:layout_alignLeft="@+id/text_bairroAlunoID"
+        android:layout_alignStart="@+id/text_bairroAlunoID" />
+
+    <EditText
+        android:id="@+id/text_bairroAlunoID"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:ems="10"
+        android:hint="Digite seu Bairro"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/text_diasAlunoID"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_caixa_texto"
+        android:ems="10"
+        android:hint="Digite os dias de aula"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/text_turnoAlunoID"
+        android:layout_alignLeft="@+id/text_turnoAlunoID"
+        android:layout_alignStart="@+id/text_turnoAlunoID" />
+
+    /*EditText
+    android:id="@+id/text_senhaAlunoID"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_usuarioAlunoID"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/fundo_caixa_texto"
+    android:ems="10"
+    android:hint="Digite sua senha"
+    android:inputType="textPassword"
+    android:padding="16dp"
+    android:textColor="@android:color/white"
+
+    android:textColorHint="@android:color/white" />
+    */
+
+
+
+</RelativeLayout>

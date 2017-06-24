@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_degrade"
+
+    tools:context="aplicativovalendo.studio.com.aplicativovalendo.Activity.ProfessorCadastroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/text_emailprofessorID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/professorMargin"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite o seu email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/text_nomeprofessorID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_emailprofessorID"
+            android:layout_alignStart="@+id/text_emailprofessorID"
+            android:layout_below="@+id/text_emailprofessorID"
+            android:layout_marginTop="@dimen/professorMargin"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite seu nome completo"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/text_disciplinaprofessorID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_nomeprofessorID"
+            android:layout_alignStart="@+id/text_nomeprofessorID"
+            android:layout_below="@+id/text_nomeprofessorID"
+            android:layout_marginTop="@dimen/professorMargin"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite a sua disciplina"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/text_diasprofessorID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_bairroprofessorID"
+            android:layout_alignStart="@+id/text_bairroprofessorID"
+            android:layout_below="@+id/text_bairroprofessorID"
+            android:layout_marginTop="@dimen/professorMargin"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite os dias de atuação"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/text_bairroprofessorID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_disciplinaprofessorID"
+            android:layout_alignStart="@+id/text_disciplinaprofessorID"
+            android:layout_below="@+id/text_disciplinaprofessorID"
+            android:layout_marginTop="@dimen/professorMargin"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite seu(s) bairros de atuação"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/text_telefoneprofessorID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_diasprofessorID"
+            android:layout_alignStart="@+id/text_diasprofessorID"
+            android:layout_below="@+id/text_diasprofessorID"
+            android:layout_marginTop="@dimen/professorMargin"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite o seu telefone/wpp"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/text_horarioprofessorID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_telefoneprofessorID"
+            android:layout_alignStart="@+id/text_telefoneprofessorID"
+            android:layout_below="@+id/text_telefoneprofessorID"
+            android:layout_marginTop="@dimen/professorMargin"
+            android:background="@drawable/fundo_caixa_texto"
+            android:ems="10"
+            android:hint="Digite seu horário de atuação"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/botao_CadastroPROFID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_horarioprofessorID"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/text_horarioprofessorID"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="@dimen/professorMargin"
+            android:background="@drawable/fundo_botao"
+            android:text="@string/botao_cadastroProfessor" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fundo_degrade"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_height="match_parent"
+    tools:context="aplicativovalendo.studio.com.aplicativovalendo.Activity.CadastroAlunoOuProfessorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/AlunoOuProfessor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/professorCadastroID"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:onClick="professorCadastro"
+            android:background="@drawable/fundo_cadastro"
+            android:text="Professor"
+            android:textColor="#4d0026" />
+
+        <Button
+            android:id="@+id/alunoCadastroID"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/professorCadastroID"
+            android:layout_alignStart="@+id/professorCadastroID"
+            android:layout_below="@+id/professorCadastroID"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/fundo_cadastro"
+            android:onClick="alunoCadastro"
+            android:text="Aluno"
+            android:textColor="#4d0026" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
